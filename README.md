@@ -32,13 +32,15 @@
 
    • in functia de run_genetic_algoritm() s-au paralizat parcurgerile din interiorul
     primei itartii
-   • de asemenea, s-a paralelizat cu aceeasi metoda prima iteratie din functia de 
+  
+  • de asemenea, s-a paralelizat cu aceeasi metoda prima iteratie din functia de 
     cmpute_fitness()
 
    • sortarea cromozomilor si operatiile de mutare, de crosover si de suprascriere  a 
       generatiilor sunt realizate de un singur thread, s-a considerat thread-ul cu id-ul 0
 
    • pentru sincronizarea thread-urilor s-a folosit bariera
+   
    • bariera a fost pusa astfel:
         
        ‣ intre calcularea valorii de fitness si sortarea cromozomilor
